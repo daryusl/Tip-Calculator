@@ -1,0 +1,53 @@
+<html>
+    <head>
+    
+        <title>Vancouver Tip Calculator</title>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    </head>
+
+    <body>
+
+        <div id="container">
+            <h1>Vancouver Tip Calculator</h1>
+
+            <div id="calculator">
+                <form>
+                    <label>
+                        What is the subtotal of the bill?<br>
+                        $ <input type="text" id="subtotal"><br>
+                    </label>
+                    <label>
+                        How much would you like to tip?<br>
+                        <div class="box">
+                            <centre><div id = "value"></div></centre>
+                        </div>
+                        <div class = "container">
+                            <input type="range" min="0" max="30" value="15" class="slider" id="slider">
+                        </div>
+                    </label><br>
+                    <label>
+                        How many people are sharing the bill?<br>
+                        <input type="text" id="totalPeople"> people
+                    </label><br>
+                    <button type="button" id="calculate"> Calculate!</button>
+
+                </form>
+
+            </div> <!--calculator-->
+
+            <div id="totalTip">
+                    <sup>$</sup><span id="tip">0.00</span>
+                    <small id="each">each</small>
+
+            </div><!--totalTip-->
+
+        </div> <!--container-->
+
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+</html>
